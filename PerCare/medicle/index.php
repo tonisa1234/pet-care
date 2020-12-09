@@ -5,7 +5,7 @@
     <link href="css/slicknav.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-  
+
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -19,65 +19,50 @@
 </head>
 <body>
 
-  
+
+
    <header>
         <ul  class="menu" id="menu">
             <li><a class="active" href="#slidr-carousel">Home</a></li>
-            <li><a href="#intro">Our Story</a></li>
+            <li><a href="#about">Our Story</a></li>
             <li><a href="#intro">Services</a></li>
-            <li><a href="#testimonial">Clients</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-           
+            <li><a href="#testimonial">About Doctor's</a></li>
+            <li><a href="#contact">Take An Appoinment</a></li>
         </ul>
-       
+
    </header>
    <section class="slider">
       <ul class="slidr-carousel" id="slidr-carousel">
           <li class="img1">
-              <h2>Happy <span>Pet</span> Care</h2>
-              
+              <h2>Pet <span>Health</span> Care</h2>
+
               <i class="fa fa-facebook"></i>
               <i class="fa fa-instagram"></i>
               <i class="fa fa-youtube"></i>
               <p><br>
-              Pets have <span>more love and compassion</span> <br>in them than most Humans
+            Here we served <span>better health care</span> service.<br>
+            Any<span> emergency need </span>you can find needed solution here...
               </p><br>
-                 <?php
-    session_start();
-    if(isset($_SESSION["uname"])){
-        if((time() - $_SESSION['last_login_timestamp'])>3600){
-            header("location:logout.php");
-        }
-        else{
-            $_SESSION['last_login_timestap'] = time();
-            echo "<p align='center'><a href='logout.php'> Logout</a></p>";
-        }
-     
-    }
-            else{
-            header('location:logout.php');
-            }
-    ?>
-             
+              <a href="one.php" class="btn btn-half">SIGN UP</a>
           </li>
            <li class="img2">
-              <h2>Happy <span>Pet</span> Care</h2>
-              
+              <h2>Pet<span>Health</span> Care</h2>
+
               <i class="fa fa-facebook"></i>
               <i class="fa fa-instagram"></i>
               <i class="fa fa-youtube"></i>
               <p><br>
-              Pets have <span>more love and compassion</span> <br>in them than most Humans
+             Here we served <span>better health care</span> service.<br>
+            Any<span> emergency need </span>you can find needed solution here...
               </p><br>
-              <a href="" class="btn btn-half">LOG OUT</a>
+              <a href="" class="btn btn-half">SIGN UP</a>
           </li>
-           
+
       </ul>
-       
+
    </section>
    <!-- end homepage -->
-   
+
    <section class="about-section" id="about">
      <div class="img">
       <div class="container">
@@ -89,13 +74,13 @@
                        We can judge the heart of a man <br>by his treatment of animals.
                    </p>
                </div>
-                
+
             </div>
-             
+
          </div>
          <div class="about1">
 
-            
+
 
               <p><b>In our site people can find pet which they want.We take order from the customer and We also provide them their pet's food,toy,
                 and other necessary things also.
@@ -109,13 +94,13 @@
          </div>
          </div>
    </section>
-   
-   
+
+
 
    <!--end story-->
-   
+
    <section class="intro-area white" id="intro">
-     <div class="img3">
+     <div class="img3" >
       <div class="container">
          <div class="row">
             <div class="col-sm-12 text-center">
@@ -125,64 +110,69 @@
                        We can judge the heart of a man <br>by his treatment of animals.
                    </p>
                </div>
-                
+
             </div>
-             
+
          </div>
            <div class="row">
         <div class="col-md-3 text-center tx">
           <div class="icon">
-            <i class="fa fa-ship" aria-hidden="true"></i>
+            <i class="fa fa-stethoscope" aria-hidden="true"></i>
+
           </div>
-          <h3><a href="sale/sale.html">Pet for Sale</a></h3>
-          <p>In this site You can find your desired pet...</p>
+          <h3>Emergency Care</h3>
+          <p>In this site You can find vets in emergency condition ...</p>
 
         </div>
         <div class="col-md-3 text-center tx">
           <div class="icon">
-            <i class="fa fa-cutlery" aria-hidden="true"></i>
+
+            <i class="fa fa-medkit" aria-hidden="true"></i>
+
+
           </div>
-            <h3><a href="Food/food.html">Pet Food</a></h3>
-          <p>You can buy pet food from our website... </p>
+          <h3>Medicine</h3>
+          <p>you can find your needed medicine....</p>
 
         </div>
         <div class="col-md-3 text-center tx">
           <div class="icon">
-            <i class="fa fa-product-hunt" aria-hidden="true"></i>
+            <i class="fa fa-user-md" aria-hidden="true"></i>
+
           </div>
-          <h3><a href="product/product.html">Product</a></h3>
-          <p>You can find your necessary  pet product here...</p>
+          <h3>Advising for pet health</h3>
+          <p>You can find a suitable vets for your pets problem...</p>
 
         </div>
         <div class="col-md-3 text-center tx">
           <div class="icon">
-            <i class="fa fa-heartbeat" aria-hidden="true"></i>
-
+            <i class="fa fa-plus-square" aria-hidden="true"></i>
           </div>
-            <h3><a href="medicle/medicle.php">Health Care</a></h3>
-          <p>Here we served you the better health care service.
-            Any emergency need you can find your needed solution here...</p>
+          <h3>Telemedicine</h3>
+          <p>by telemedicine health care by phone or computer we can offer you and your pet access to even more comprehensive medical care by connecting with doctors and specialists who can lend their expertise in the research, diagnosis, and treatment of specific cases....</p>
+
         </div>
 
+
       </div>
-          
+
       </div>
       </div>
-       
+
    </section>
    <!--end section-->
-   
+
    <section class="testimonials" id="testimonial">
       <div class="container">
          <div class="row">
             <div class="col-sm-12 text-center">
-               <h2>AWSOME CLIENTS</h2>
+               <h2>About Doctor's</h2>
                <div class="sub-heading">
-               <p>When I make my clients SMILE<br>that's real success.</p>
+               <p>When I make my Patients SMILE<br>that's real success.</p>
                </div>
-                
+
             </div>
-             
+
          </div>
          <div class="row">
             <div class="col-sm-12">
@@ -190,126 +180,57 @@
                   <ol class="carousel-indicators">
                      <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
                      <li data-target="#carousel-testimonials" data-slide-to="1" ></li>
-                     
-                      
+                     <li data-target="#carousel-testimonials" data-slide-to="2" ></li>
+
+
                   </ol>
-                  
+
                   <div class="carousel-inner">
                      <div class="item active text-center">
-                       
-                        <h2>WE are Beginner</h2>
-                        <p>When we Start our clients review will be visible here.</p>
-                         
+                         <img src="Images/depositphotos_33044395-stock-photo-doctor-smiling.jpg" class="center-block">
+                         <h1>Dr.Arifur Rabbi</h1>
+                         <h4>Veterinary Doctor</h4>
+                        <p>Pet animal Disease Diagnosis and Treatment.Pet animal Vaccination.Dog and Cat vaccine.<br>Dog and Cat Routine Deworming</p>
+
                      </div>
                      <div class="item text-center">
-                        <h2>Work with US</h2>
-                        <p>We will make you pleased.</p>
+                        <img src="Images/depositphotos_33044395-stock-photo-doctor-smiling.jpg" class="center-block">
+                         <h1>Dr.Arifur Rabbi</h1>
+                         <h4>Veterinary Doctor</h4>
+                        <p>Pet animal Disease Diagnosis and Treatment.Pet animal Vaccination.Dog and Cat vaccine.<br>Dog and Cat Routine Deworming</p>
+                     </div>
+                     <div class="item text-center">
+                        <img src="Images/depositphotos_33044395-stock-photo-doctor-smiling.jpg" class="center-block">
+                         <h1>Dr.Arifur Rabbi</h1>
+                         <h4>Veterinary Doctor</h4>
+                        <p>Pet animal Disease Diagnosis and Treatment.Pet animal Vaccination.Dog and Cat vaccine.<br>Dog and Cat Routine Deworming</p>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </div>   
-   </section>
-   <!-- end testimonial-->
-   
-   <section class="team-area" id="team">
-     <div class="img4">
-      <div class="container">
-         <div class="row">
-              <div class="col-sm-12 text-center">
-               <h2>Our Team</h2>
-               <div class="sub-heading">
-               <p>The strength of the team is each individual member.<br>The strangth of each member is a team.</p>
-               </div>
-                
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-sm-6 col-md-3">
-              
-            </div>
-             <div class="col-sm-6 col-md-3">
-               <div class="team-block">
-               <div class="team-man">
-                  <img src="Images/20200725_165758_2.jpg">
-                   
-               </div>
-
-               <div class="team-description">
-                  <div class="team-title">
-                     <h3>Moumita Goswami</h3>
-                     <span>Student</span>
-                      
-                  </div>
-                  <p>
-                      Student of Software engineering at Daffodil International University. Working on Web developing from last four months. Trying to build up a Web site.
-                  </p>
-                  <div class="team-social-network">
-                     <a href=""><i class="fa fa-facebook"></i></a>
-                     <a href=""><i class="fa fa-twitter"></i></a>
-                     <a href=""><i class="fa fa-linkedin"></i></a>
-                      
-                  </div>
-                 </div>  
-               </div>
-                
-            </div>
-             <div style="margin-top: 50;" class="col-sm-6 col-md-3">
-              <div class="team-block">
-                <div class="team-man">
-                  <img src="Images/IMG_2874_2.JPG">
-                   
-               </div>
-               <div class="team-description">
-                  <div class="team-title">
-                     <h3>Farhana Tanjum</h3>
-                     <span>Student</span>
-                      
-                  </div>
-                  <p>
-                      Student of Software engineering at Daffodil International University. Working on Web developing from last four months. Trying to build up a Web site.
-                  </p>
-                  <div class="team-social-network">
-                     <a href=""><i class="fa fa-facebook"></i></a>
-                     <a href=""><i class="fa fa-twitter"></i></a>
-                     <a href=""><i class="fa fa-linkedin"></i></a>
-                      
-                  </div>
-                   
-               </div>
-               
-               </div>
-                
-            </div>
-             <div class="col-sm-6 col-md-3">
-                          
-            </div>
-             
-         </div>
-          
       </div>
-     </div>  
    </section>
-   
-   <!-- end team -->
-   
+   <!-- end About Doctors-->
+
+
+
    <section class="contact-area" id="contact" >
       <div class="img5">
        <div class="container">
           <div class="row">
              <div class="col-sm-12 text-center">
-                <h2>CONTACT US</h2>
+                <h2>Take An Appoinment</h2>
                  <div class="sub-heading">
                <p>The strength of the team is each individual member.<br>The strangth of each member is a team.</p>
                </div>
-                 
+
              </div>
-              
+
           </div>
           <div class="row">
              <div class="col-sm-3 devider">
-                <h3>contact</h3>
+                <h3>Hospital contact</h3>
                 <div class="contact-address">
                    <ul>
                        <li>
@@ -318,7 +239,7 @@
                               <h4>address</h4>
                               <span>1234 Mirpur road</span>
                               <span>Dhaka,Bangladesh</span>
-                               
+
                            </div>
                        </li>
                         <li>
@@ -326,8 +247,8 @@
                            <div class="address-phone">
                               <h4>Phone</h4>
                               <span>123456789</span>
-                              
-                               
+
+
                            </div>
                        </li>
                         <li>
@@ -335,58 +256,58 @@
                            <div class="address-phone">
                               <h4>Email</h4>
                               <span>abc@gmail.com</span>
-                              
-                               
+
+
                            </div>
                        </li>
-                       
+
                    </ul>
-                    
+
                 </div>
-                 
+
              </div>
              <div class="col-sm-9">
                 <div class="contact-block">
-                   <h3>Drop a message</h3>
-                   <form class="contact-form" action="form.php" method="post">
+                   <h3>Patients INFO</h3>
+                   <form class="contact-form">
                        <div class="row">
                            <div class="col-sm-6">
                                <div class="form-group">
-                                   <input type="text" class="form-control" placeholder="your first name"  name="uname" required="required">
+                                   <input type="text" class="form-control" placeholder="Pet Catagory" required="required">
                                </div>
                                <div class="form-group">
-                                   <input type="text" class="form-control" placeholder="your email@ address" name="email" required="required">
+                                   <input type="text" class="form-control" placeholder="Pet Age" required="required">
                                </div>
                                <div class="form-group">
-                                   <input type="text" class="form-control" placeholder="your phone number" name="phone" required="required">
+                                   <input type="text" class="form-control" placeholder="Required Doctor" required="required">
                                </div>
                            </div>
                            <div class="col-sm-6">
                                <div class="form-group">
-                                   <textarea class="font-control" placeholder="message" name="msg" required="required" ></textarea>
+                                   <textarea class="font-control" placeholder="Problems Summary" required="required" ></textarea>
                                </div>
                                <div class="form-group">
-                                   <input type="submit" style="color:black" class="btn default-btn btn-block"  name="submit" value="Submit Quries">
+                                   <input type="submit" class="btn default-btn btn-block" value="Submit Quries">
                                </div>
                            </div>
                        </div>
                    </form>
-                    
+
                 </div>
-                 
+
              </div>
-              
-          </div> 
+
+          </div>
        </div>
        </div>
-       
+
    </section>
-   <!-- end contact-->
+   <!-- end appoinment-->
    <footer>
       <div class="img6">
        <div class="row">
           <div class="col-md-4">
-              
+
           </div>
           <div class="col-md-4 text-center">
               <h1>PeTLovers</h1>
@@ -396,57 +317,23 @@
                      <a href="service.html"><i class="fa fa-facebook"></i></a>
                      <a href="service.html"><i class="fa fa-twitter"></i></a>
                      <a href="service.html"><i class="fa fa-linkedin"></i></a>
-                      
+
                   </div>
           </div>
           <div class="col-md-4">
-              
+
           </div>
-          
-           
+
+
        </div>
        </div>
-       
+
    </footer>
-   
-   
-   
+
+
+
     <script src="js/main.js"></script>
     <script src="js/jquery.slicknav.min.js" type="text/javascript"></script>
-    
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
